@@ -8,7 +8,7 @@
  import java.io.File;
  import java.io.FileNotFoundException;
 
- public class TextFilesScannerWithThrows
+ public class TextFileScannerWithThrows
  {
    public static void main(String[] args)
 
@@ -18,13 +18,13 @@
        double num2;
        String name;
 
-       Scanner sc = new Scanner(System.in);
+       Scanner sc = new Scanner(new File("sc.txt"));
 
        num1 = sc.nextInt();
        num2 = sc.nextDouble();
        name = sc.next();
 
        System.out.printf("Hi %s , the sum of %d & %.2f is %.2f%n ", name , num1 , num2 , num1+num2);
-
+       sc.close();
      }
    }
