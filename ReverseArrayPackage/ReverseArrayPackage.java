@@ -25,7 +25,7 @@ public class ReverseArrayPackage {
 
         }
         for(i = 0; i < n ; i++){
-        System.out.print(" "+arr[(n-1) - i]);
+        System.out.print(+arr[(n-1) - i]+" ");
 }
 }
 
